@@ -1,16 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import InfoPanel from './index';
+import {shallow} from 'enzyme'
 
 
-let props = {
-    type: "downloads",
-    number: 400
-}
+const createWrapper = (props, render = shallow) => {
+  return render(<InfoPanel {...props} />);
+};
 
+describe("InfoPanel", () => {
+  let wrapper;
+  let props;
+
+  beforeEach(() => {
+
+    props = {
+      type: "downloads",
+      number: 400
+    };
+
+    wrapper = createWrapper(props);
+  });
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<InfoPanel {...props}/>, div);
-  ReactDOM.unmountComponentAtNode(div);
+  expect(wrapper).toMatchSnapshot();
+});
 });
