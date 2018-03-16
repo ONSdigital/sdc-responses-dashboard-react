@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoPanel renders without crashing 1`] = `
+<styled.div>
+  <styled.div>
+     
+    400
+     
+  </styled.div>
+  <styled.div>
+     
+  </styled.div>
+</styled.div>
+`;
