@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import React from "react";
 import PropTypes from "prop-types";
-import download from "./Download.png";
-import upload from "./Upload.png";
-import reged from "./Reged.png";
+import download from "./Download.svg";
+import upload from "./Upload.svg";
+import reged from "./Reged.svg";
 
 const TextPanel = styled.div`
   font-family: helvetica;
