@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+### Prerequisites
+
+- Node.js 7.10.0
+- [Yarn](https://yarnpkg.com/en/)
+- Google Chrome
+
+### How to install
+
+- Just run `yarn` to install all dependencies.
 
 ## Available Scripts
 

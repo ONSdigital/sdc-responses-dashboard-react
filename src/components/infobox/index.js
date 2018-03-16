@@ -58,6 +58,8 @@ class InfoPanel extends React.Component {
         icon = <Icon src={reged} />;
         text = "Registered";
         break;
+      default:
+      break;
     }
 
 
