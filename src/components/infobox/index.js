@@ -6,14 +6,14 @@ import upload from "./Upload.svg";
 import reged from "./Reged.svg";
 
 const TextPanel = styled.div`
-  font-family: Helvetica, sans-serif;
+  font-family: helvetica;
   font-size: 2em;
   font-weight: 900;
   text-align: center;
 `;
 
 const NumberPanel = styled.div`
-  font-family: Helvetica, sans-serif;
+  font-family: helvetica;
   font-size: 6em;
   font-weight: 900;
 `;
