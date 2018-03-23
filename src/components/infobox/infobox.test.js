@@ -1,8 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import InfoPanel from './index';
-import {shallow} from 'enzyme'
-
+import React from "react";
+import InfoPanel from "./index";
+import { shallow } from "enzyme";
 
 const createWrapper = (props, render = shallow) => {
   return render(<InfoPanel {...props} />);
@@ -13,7 +11,6 @@ describe("InfoPanel", () => {
   let props;
 
   beforeEach(() => {
-
     props = {
       type: "downloads",
       number: 400
@@ -22,7 +19,7 @@ describe("InfoPanel", () => {
     wrapper = createWrapper(props);
   });
 
-it('renders without crashing', () => {
-  expect(wrapper).toMatchSnapshot();
-});
+  it("renders without crashing", () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });

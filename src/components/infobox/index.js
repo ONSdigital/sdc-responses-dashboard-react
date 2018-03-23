@@ -59,9 +59,8 @@ class InfoPanel extends React.Component {
         text = "Registered";
         break;
       default:
-      break;
+        break;
     }
-
 
     return (
       <Container>
