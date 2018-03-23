@@ -2,13 +2,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Prerequisites
 
-- Node.js 7.10.0
-- [Yarn](https://yarnpkg.com/en/)
-- Google Chrome
+* Node.js 7.10.0
+* [Yarn](https://yarnpkg.com/en/)
+* Google Chrome
 
 ### How to install
 
-- Just run `yarn` to install all dependencies.
+* Just run `yarn` to install all dependencies.
 
 ## Available Scripts
 
@@ -36,3 +36,28 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
+
+# Troubleshooting
+
+## Jest crashing
+
+### Problem
+
+Running `yarn test` causes Jest to crash with the following error:
+
+```
+(FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-22)
+(FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-22)
+(FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-22)
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Error watching file for changes: EMFILE
+    at exports._errnoException (util.js:1036:11)
+    at FSEvent.FSWatcher._handle.onchange (fs.js:1406:11)
+```
+
+### Solution
+
+According to [this thread](https://github.com/facebook/jest/issues/1767), install watchman: `brew install watchman`

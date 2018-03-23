@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import InfoPanel from "./components/infobox"
+import React, { Component } from "react";
+import BasicInfoFrame from "./containers/basicInformationPage";
+import Header from "./components/header";
+import UpdateTimer from "./containers/updateTimer";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <InfoPanel type="download" number={100} />
-      </div>
+      <React.Fragment>
+        <Header />
+        <BasicInfoFrame />
+        <UpdateTimer />
+      </React.Fragment>
     );
   }
 }
