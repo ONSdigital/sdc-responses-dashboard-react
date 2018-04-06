@@ -6,15 +6,13 @@ import upload from "./Upload.svg";
 import reged from "./Reged.svg";
 
 const TextPanel = styled.div`
-  font-family: helvetica;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 900;
   text-align: center;
 `;
 
 const NumberPanel = styled.div`
-  font-family: helvetica;
-  font-size: 6em;
+  font-size: 9.5em;
   font-weight: 900;
 `;
 
@@ -28,11 +26,6 @@ const Container = styled.div`
   margin: auto;
   text-align: center;
   align-items: center;
-  max-width: 15em;
-  max-height: 8em;
-  padding: 5em;
-  border-color: black;
-  border-style: solid;
 `;
 
 class InfoPanel extends React.Component {
@@ -56,7 +49,7 @@ class InfoPanel extends React.Component {
         break;
       case "reged":
         icon = <Icon src={reged} />;
-        text = "Registered";
+        text = "Accounts Enrolled";
         break;
       default:
         break;
