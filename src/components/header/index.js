@@ -11,6 +11,7 @@ const LogoHeader = styled.div`
   display: flex;
   border-width: 1px 0;
   align-items: center;
+   height: 2em;
 `;
 const ClockDiv = styled.div`
   position: absolute;
@@ -21,7 +22,7 @@ const ClockDiv = styled.div`
 `;
 const Header = styled.header`
   background-color: #033e58;
-  height: 6em;
+  height: 8em;
   color: white;
 `;
 const TitleHeader = styled.div`
@@ -35,18 +36,24 @@ const TitleHeader = styled.div`
   border-width: 0 0 1px 0;
 `;
 
+const CollExHeader = styled(TitleHeader)`
+  height: 4rem;
+  font-size: 2rem;
+  padding-left: 3rem;
+`;
+
 class DashHeader extends React.Component {
   render() {
     return (
       <Header>
         <LogoHeader>
-          <img className="logo" src={logo} alt="" /> ONS
+          <img className="logo" src={logo} alt="" /> &nbsp;&nbsp;ONS
           <ClockDiv>
             <Clock />
           </ClockDiv>
         </LogoHeader>
         <TitleHeader>Survey Response Dashboard</TitleHeader>
-        <TitleHeader>BRES 2018</TitleHeader>
+        <CollExHeader>BRES 2018</CollExHeader>
       </Header>
     );
   }

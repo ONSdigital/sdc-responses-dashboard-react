@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import download from "./Download.svg";
 import upload from "./Upload.svg";
 import reged from "./Reged.svg";
+import size from "./Size.svg";
 
 const TextPanel = styled.div`
   font-size: 3em;
@@ -47,9 +48,13 @@ class InfoPanel extends React.Component {
         icon = <Icon src={upload} />;
         text = "Uploads";
         break;
-      case "reged":
+      case "accountsEnrolled":
         icon = <Icon src={reged} />;
         text = "Accounts Enrolled";
+        break;
+      case "sampleSize":
+        icon = <Icon src={size} />;
+        text = "Sample Size";
         break;
       default:
         break;
