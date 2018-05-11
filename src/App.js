@@ -22,7 +22,7 @@ class App extends Component {
 
   getReport() {
     $.ajax({
-      url: process.env.REACT_APP_API_ROOT_URL + "report/1",
+      url: process.env.REACT_APP_API_ROOT_URL + "reporting-api/v1/response-dashboard/" + process.env.REACT_APP_UUID,
       dataType: "json",
       timeout: 1500
     })

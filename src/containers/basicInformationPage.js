@@ -17,7 +17,7 @@ class BasicInfoPage extends Component {
     collection: PropTypes.shape({
       downloads: PropTypes.number.isRequired,
       uploads: PropTypes.number.isRequired,
-      accountsCreated: PropTypes.number.isRequired,
+      accountsEnrolled: PropTypes.number.isRequired,
       sampleSize: PropTypes.number.isRequired
     })
   };
@@ -31,7 +31,7 @@ class BasicInfoPage extends Component {
         </HalfCanvas>
         <HalfCanvas>
           <InfoPanel
-            number={this.props.collection.accountsCreated}
+            number={this.props.collection.accountsEnrolled}
             type="accountsEnrolled"
           />
           <InfoPanel
