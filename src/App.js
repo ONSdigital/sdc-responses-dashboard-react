@@ -25,8 +25,8 @@ class App extends Component {
     $.ajax({
       url:
         process.env.REACT_APP_API_ROOT_URL +
-        "reporting-api/v1/response-dashboard/" +
-        process.env.REACT_APP_UUID,
+        "reporting-api/v1/response-dashboard/collection_exercise/" +
+        process.env.REACT_APP_COLLECTION_EXERCISE_ID,
       dataType: "json",
       timeout: 1500
     })
