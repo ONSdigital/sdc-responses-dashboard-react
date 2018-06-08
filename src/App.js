@@ -3,6 +3,7 @@ import $ from "jquery";
 import BasicInfoFrame from "./containers/basicInformationPage";
 import Header from "./components/header";
 import UpdateTimer from "./containers/updateTimer";
+import ErrorPage from "./components/error";
 
 class App extends Component {
   constructor(props) {
@@ -22,7 +23,10 @@ class App extends Component {
 
   getReport() {
     $.ajax({
-      url: process.env.REACT_APP_API_ROOT_URL + "reporting-api/v1/response-dashboard/" + process.env.REACT_APP_UUID,
+      url:
+        process.env.REACT_APP_API_ROOT_URL +
+        "reporting-api/v1/response-dashboard/" +
+        process.env.REACT_APP_UUID,
       dataType: "json",
       timeout: 1500
     })
@@ -39,7 +43,7 @@ class App extends Component {
       <React.Fragment>
         <Header />
         {this.state.error ? (
-          <p>ERROR</p>
+          <ErrorPage />
         ) : (
           <BasicInfoFrame collection={this.state.collection.report} />
         )}
