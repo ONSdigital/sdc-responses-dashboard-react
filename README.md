@@ -2,13 +2,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Prerequisites
 
-* Node.js 7.10.0
-* [Yarn](https://yarnpkg.com/en/)
-* Google Chrome
+- Node.js 7.10.0
+- [Yarn](https://yarnpkg.com/en/)
+- Google Chrome
 
 ### How to install
 
-* Just run `yarn` to install all dependencies.
+- Just run `yarn` to install all dependencies.
 
 ## Available Scripts
 
@@ -36,6 +36,12 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
+
+# Enviroment Variables
+
+`REACT_APP_API_ROOT_URL` refers to the base url the RM service is being hosted on. Defaults to `http://localhost:8084/`
+
+`REACT_APP_COLLECTION_EXERCISE_ID` refers to the unique identifyer RM uses to identify each excercise. This variable has no default and must be provided on app startup.
 
 # Troubleshooting
 
