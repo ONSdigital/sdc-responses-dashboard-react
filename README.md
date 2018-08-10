@@ -1,3 +1,5 @@
+### This repo has been archived, continued development on this project can be found here: https://github.com/ONSdigital/sdc-responses-dashboard
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ### Prerequisites
